@@ -20,8 +20,8 @@ const App = () => {
     }
     const handleSumNumbers = () => {
         if (firstNumber === '0') {
-            setFirstNumber(String(currentNumber));
-            setCurrentNumber('0');
+            setFirstNumber(currentNumber);
+            setCurrentNumber('');
             setOperation('+');
         } else {
             const sum = Number(firstNumber) + Number(currentNumber);
@@ -33,7 +33,7 @@ const App = () => {
     const handleMinusNumbers = () => {
         if (firstNumber === '0') {
             setFirstNumber(String(currentNumber));
-            setCurrentNumber('0');
+            setCurrentNumber('');
             setOperation('-');
         } else {
             const minus = Number(firstNumber) - Number(currentNumber);
@@ -45,7 +45,7 @@ const App = () => {
     const handleDivNumbers = () => {
         if (firstNumber === '0') {
             setFirstNumber(String(currentNumber));
-            setCurrentNumber('0');
+            setCurrentNumber('');
             setOperation('/');
         } else {
             const div = Number(firstNumber) / Number(currentNumber);
@@ -57,7 +57,7 @@ const App = () => {
     const handleMultNumbers = () => {
         if (firstNumber === '0') {
             setFirstNumber(String(currentNumber));
-            setCurrentNumber('0');
+            setCurrentNumber('');
             setOperation('*');
         } else {
             const div = Number(firstNumber) * Number(currentNumber);
