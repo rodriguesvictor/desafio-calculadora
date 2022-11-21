@@ -32,17 +32,15 @@ export const InpuntContainer = styled.div`
 
         box-shadow: 0 0 30px rgba(0,0,0,.38);
 
+        @media only screen and ${device.laptopL}{
+            padding: 0 80px;
+        }
 
         @media only screen and ${device.laptop}{
             padding: 0;
             text-align: center;
         }
 
-
-        @media only screen and ${device.laptopL}{
-            padding: 0 80px;
-        }
-        
     }
 `
 
